@@ -1,0 +1,33 @@
+body {
+   color: black;
+   letter-spacing: 0cm;
+   padding: ;
+   margin: ;
+   border-width: 1px;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 18px;
+   background-color: #ACAC9F;
+   background-image: url("nyc-pixel.gif");
+   background-repeat: repeat-y;
+   background-size: 100%
+}
+article {
+   color:#90867C;
+   margin: 3cm;
+}
+footer {
+   font-size: ;
+   font-style: ;
+   background: ;
+   padding: ;
+}
+header {
+   font-size: ;
+   font-weight: ;
+   text-align: center;
+   background: ;
+   color: ;
+   border: ;
+   margin: ;
+   padding: ;
+}
