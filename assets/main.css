@@ -80,7 +80,6 @@ text-decoration: none; /* Remove underlines from the link */
    color: #000; /* Text color */
    border: auto; /* Remove button border */
    border-radius: 2.5px; /* Rounded corners */
-   cursor: pointer; /* Change cursor on hover */
    font-family: cursive;
    font-weight: bold;
 }
@@ -88,6 +87,7 @@ text-decoration: none; /* Remove underlines from the link */
 /* Hover effect */
 .button-link button:hover {
    background-color: #B3347A; /* Change background color on hover */
+   cursor: url('pointing-hand.png'), auto;
 }
 
 /* Add a shadow to the text */
@@ -104,6 +104,7 @@ text-decoration: none; /* Remove underlines from the link */
    width: 200px;
    height: 200px;
    margin: 20px;
+   cursor: url('pointing-hand.png');
 }
 
 video {
@@ -125,3 +126,22 @@ td{
    /* position: relative; */
    /* left: 200px; */
 }
+
+.marquee {
+   display: block;
+   left: 0;
+   position: absolute;
+   top: 0;
+ }
+ svg {
+   display: block;
+ }
+ .logo {
+   fill: #fff;
+ }
+
+ /* For a custom cursor image (change 'cursor.png' to your cursor image URL) */
+ a.custom-cursor {
+   cursor: url('pointing-hand.png'), auto;
+ }
+ 
