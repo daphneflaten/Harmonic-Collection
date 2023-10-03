@@ -120,3 +120,8 @@ video {
    padding: 8px;
    text-align: center;
 }
+
+td{
+   /* position: relative; */
+   /* left: 200px; */
+}
