@@ -144,4 +144,15 @@ td{
  a.custom-cursor {
    cursor: url('pointing-hand.png'), auto;
  }
- 
+
+ @font-face {
+   font-family: 'VCR OSD Mono';
+   src: url('path-to-your-font/vcr-osd-mono.ttf') format('truetype');
+   /* You can specify different file formats for cross-browser compatibility */
+ }
+
+ .gradient-bg {
+   background-image: linear-gradient(to bottom, #D61778, 
+   #FA46A1);
+   color: white;
+ }
