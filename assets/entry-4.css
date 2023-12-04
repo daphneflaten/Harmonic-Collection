@@ -1,78 +1,33 @@
 body {
-   color: black;
-   letter-spacing: 0cm;
-   padding: 0;
-   margin: 0;
-   border-width: 1px;
-   font-family: 'VCR OSD MONO', monospace;
-   font-size: 17px;
-   background-color: #ACAC9F;
-   background-repeat: none;
-   background-size: 100%;
    background-image: url('bg-limegradient.jpeg');
 }
 
-header {
-   align-items: center;
-}
-
-footer {
-   align-items: center;
-}
-
 .container {
-   position: relative;
-   padding: 50px;
+   position: absolute;
    color: #FFF;
-   z-index: 100;
    text-align: center;
    font-family: 'falcon', sans-serif;
    font-size: 70px;
    text-shadow: 0 0 5px white;
-   line-height: 0px;
 }
 
-.table-container {
-   max-height: 500px; /* Set the maximum height for scrolling */
-   display: flex;
-   position: relative;
-   z-index: 100;
-}
-
-.button-link {
-text-decoration: none; /* Remove underlines from the link */
-}
-
-.button-link button {
-   background-color: #DE4096; /* Background color */
-   color: #000; /* Text color */
-   border: auto; /* Remove button border */
-   border-radius: 2.5px; /* Rounded corners */
-   font-family: cursive;
-   font-weight: bold;
-}
-
-.button-link button:hover {
-   background-color: #B3347A; /* Change background color on hover */
-   cursor: url('pointing-hand.png'), auto;
-}
-
-.text-with-shadow {
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* horizontal-offset vertical-offset blur-radius color */
+.container2 {
+   width: 36ch;
+   background: white;
+   color: black;
+   position: absolute;
+   z-index: 50;
+   font-size: 16px;
+   border: ridge 4px #ACAC9F;
+   font-family: 'vcr osd mono', monospace;
 }
 
 .video-container {
    width: 400px;
    height: 400px;
-   z-index: 1;
-   position: relative;
-   box-shadow: 0 0 10px white; /* Adjust the values for the desired glow effect */
+   position: absolute;
+   box-shadow: 0 0 10px white;
    border: 2px #FFF;
-}
-
-.slideshow-container {
-   display: flex;
-   overflow: hidden;
 }
 
 video {
@@ -80,144 +35,13 @@ video {
    height: auto;
 }
 
-.prev, .next {
-   cursor: pointer;
+.image-container {
    position: absolute;
-   top: 50%;
-   width: auto;
-   padding: 16px;
-   margin-top: -22px;
-}
-
-.prev {
-   left: 0;
-}
-
-.next {
-   right: 0;
-}
-
-.table {
-   border-collapse: collapse;
-   /* Optional styling for the table */
-}
-
-.table th, .table td {
-   border: 1px solid #ccc;
-   padding: 8px;
-   text-align: center;
-}
-
-.marquee {
-   display: block;
-   left: 0;
-   position: absolute;
-   top: 0;
- }
- svg {
-   display: block;
- }
- .logo {
-   fill: #fff;
- }
-
- /* For a custom cursor image (change 'cursor.png' to your cursor image URL) */
- a.custom-cursor {
-   cursor: url('pointing-hand.png'), auto;
- }
-
- @font-face {
-   font-family: 'Windows Command Prompt';
-   src: url('path-to-your-font/windows_command_prompt.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'Arial Pixel';
-   src: url('path-to-your-font/dish-arial-pixel.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'VCR OSD MONO';
-   src: url('path-to-your-font/vcr-osd-mono.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'falcon';
-   src: url('path-to-your-font/FALCON.TTF') format('truetype');
-}
-
-@font-face {
-   font-family: 'cooper bits';
-   src: url('path-to-your-font/CooperBits.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'digilf';
-   src: url('path-to-your-font/DIGILF__.TTF') format('truetype');
-}
-
-@font-face {
-   font-family: 'alkhemikal';
-   src: url('path-to-your-font/Alkhemikal.ttf') format('truetype');
-}
-@font-face {
-   font-family: 'rocketpop';
-   src: url('path-to-your-font/rocketpopbevel.otf') format('opentype');
-}
-@font-face {
-   font-family: 'y2k analog';
-   src: url('path-to-your-font/Y2K_analog_legacy_italic.ttf') format('truetype');
-}
-@font-face {
-   font-family: 'yerk';
-   src: url('path-to-your-font/Yerk-Regular.ttf') format('truetype');
-}
-@font-face {
-   font-family: 'kilo';
-   src: url('path-to-your-font/Kilo.otf') format('opentype');
-}
-@font-face {
-   font-family: 'yagiza';
-   src: url('path-to-your-font/YAGIZA__.TTF') format('truetype');
-}
-
- .gradient-bg {
-   background-image: linear-gradient(to bottom, #B3347A, 
-   #DE4096);
-   color: white;
- }
-
- .image-container {
-   position: relative;
    height: 0px;
    width: 0px;
    z-index: 105;
 }
 
- /* CSS for the navbar */
- .navbar {
-   position: fixed;
-   height: 60px;
-   width: 100%;
-   color: black; /* Customize the text color as needed */
-   padding: 1px; /* Customize the padding as needed */
-   text-align: center;
-   z-index: 1000; /* Ensure it's above other elements */
-   text-shadow:
-   0 0 5px #FFF; /* Adds a stroke and shadow effect */
+.navbar {
+   text-shadow: 0 0 5px #FFF;
 }
- 
- /* Style the links inside the navigation bar */
- .navbar a {
-   display: inline-block; /* Set to inline-block to make them appear horizontally */
-   color: #000;
-   text-align: center;
-   padding: 5px;
-   font-size: 50px;
- }
- 
- /* Change the color of links on hover */
- .navbar a:hover {
-   background-color: none;
-   color: none;
- }

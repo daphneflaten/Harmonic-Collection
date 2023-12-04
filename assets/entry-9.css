@@ -1,0 +1,56 @@
+body {
+   background-image: url('bg-turquoise.jpeg');
+}
+
+.navbar {
+   text-shadow:
+      0 0 5px #FFF;
+}
+
+.container {
+   position: absolute;
+   padding: 0px;
+   color: #FFF;
+   z-index: 3;
+   text-align: center;
+   font-family: 'digistick', sans-serif;
+   font-size: 70px;
+   text-shadow: 0 0 5px white;
+   line-height: 65px;
+   margin-left: 23vw;
+}
+
+table {
+   border-collapse: separate;
+   border-spacing: 20px;
+   box-shadow: 0 0 10px #FFF;
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: #FFF;
+   padding: 10px;
+   font-family: 'vcr osd mono', monospace;
+   color: #FFF;
+   text-shadow: 0 0 5px #FFF;
+   font-size: 12px;
+   margin: auto;
+   margin-top: 15vh;
+}
+
+.image-container {
+   position: fixed;
+   display: flex;
+   z-index: 2;
+   color: #FFF;
+   text-shadow: 0 0 5px white;
+   font-family: 'vcr osd mono', monospace;
+}
+
+th {
+   border-radius: 10px;
+   box-shadow: 0 0 5px #a0e4ec;
+   background-color: #a0e4ec;
+}
+
+img {
+   border-radius: 10px;
+}

@@ -1,0 +1,83 @@
+body {
+   background-image: url('bg-pinkorange-gradient.jpeg');
+   overflow: hidden;
+}
+
+.navbar {
+   text-shadow:
+   0 0 5px #FFF;
+}
+
+#popup-container {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100vw;
+   background-color: #FFF;
+   padding: 10px;
+   box-shadow: 0 0px 5px #ec94f8;
+   font-family: 'vcr osd mono', sans-serif;
+   color: #ff8c74;
+   text-shadow:
+   0 0 5px #ff8c74;
+}
+
+.image-container {
+   justify-content: center;
+   text-align: center;
+}
+
+#popup-content {
+   text-align: center;
+}
+
+.button-link {
+   text-decoration: none;
+}
+
+.button-link button {
+   background-color: #ff8c74;
+   color: #FFF;
+   font-family: 'vcr osd mono', monospace;
+   border: none;
+   border-radius: 5px;
+   box-shadow: 0 0px 5px #ff8c74;
+}
+
+.draggable {
+   position: absolute;
+   cursor: grab;
+ }
+
+ #imageContainer {
+   position: absolute;
+   max-width: 100%;
+ }
+
+ #textInput {
+   position: absolute;
+   padding: 10px;
+   font-size: 16px;
+   border: none;
+   background: transparent;
+   color: white;
+   font-family: 'vcr osd mono', sans-serif;
+   margin-left: -14.5vw;
+   margin-top: 6vh;
+   text-align: center;
+ }
+
+ .container {
+   position: absolute;
+   cursor: grab;
+   user-select: none;
+}
+
+.draggable-container {
+   margin: 10px 0;
+}
+
+ .box {
+   cursor: move;
+ }

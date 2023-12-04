@@ -1,0 +1,51 @@
+body {
+   background-image: url('bg-pinkandgreengradient.png');
+}
+
+.container {
+   position: fixed;
+   color: #FFF;
+   font-size: 80px;
+   text-shadow: 0 0 5px white;
+   line-height: 65px;
+   font-family: "falcon", sans-serif;
+   text-align: center;
+   margin-left: 15vw;
+   margin-top: 20vh;
+}
+
+.container2 {
+   position: absolute;
+   padding: 0px;
+   color: #FFF;
+   z-index: 100;
+   text-align: center;
+   font-family: 'vcr osd mono', sans-serif;
+   font-size: 18px;
+   text-shadow: 0 0 5px white;
+   line-height: 20px;
+   width: 65ch;
+}
+
+.navbar {
+   text-shadow: 0 0 5px #FFF;
+}
+
+.quiz-container {
+   position: absolute;
+   text-align: center;
+   margin-left: 40vw;
+   margin-top: 6vw;
+}
+
+.question {
+   margin-bottom: 35vh;
+   font-size: 16px;
+   font-family: 'vcr osd mono', sans-serif;
+   color: white;
+   text-shadow: 0 0 5px white;
+}
+
+img {
+   width: 25%;
+}

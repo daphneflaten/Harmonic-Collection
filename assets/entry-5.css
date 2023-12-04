@@ -1,18 +1,9 @@
 body {
-   color: black;
-   letter-spacing: 0;
-   margin: 0;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 17px;
-   background-color: #ACAC9F;
-   background-repeat: repeat-y;
-   background-size: 100%;
    background-image: url('bg-yellowgradient.jpeg');
-   
 }
 
 .container {
-   position: relative;
+   position: absolute;
    padding: 0px;
    color: #fce390;
    z-index: 100;
@@ -21,50 +12,19 @@ body {
    font-size: 24px;
    text-shadow: 0 0 5px #fce390;
    line-height: 25px;
+   width: 20ch;
 }
 
-article {
-   color: #90867C;
-   margin: 3cm;
-}
-
-header {
-   background-color: transparent;
-   color: #fff;
-   padding: 0;
-}
-
-.header-box {
-   max-width: 1200px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.table-container {
-   max-height: 600px;
-   overflow-y: auto;
-   display: flex;
-}
-
-.button-link button {
-   background-color: #DE4096;
-   color: #000;
-   border: none;
-   border-radius: 2.5px;
-   font-family: cursive;
-   font-weight: bold;
-   text-decoration: none;
-}
-
-.button-link button:hover {
-   background-color: #B3347A;
-   cursor: url('pointing-hand.png'), auto;
-}
-
-.text-with-shadow {
-   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.container2 {
+   position: absolute;
+   padding: 0px;
+   color: #fce390;
+   z-index: 100;
+   text-align: center;
+   font-family: 'vcr osd mono', monospace;
+   font-size: 24px;
+   text-shadow: 0 0 5px #fce390;
+   line-height: 25px;
 }
 
 .table {
@@ -87,24 +47,16 @@ header {
    border: 4px ridge #ACAC9F;
    padding: 1px;
    color: #000;
-   z-index: 1;
+   z-index: 50;
+   font-family: 'vcr osd mono', monospace;
 }
 
 .hidden {
  display: none;
 }
 
-@font-face {
- font-family: 'Windows Command Prompt';
- src: url('path-to-your-font/windows_command_prompt.ttf') format('truetype');
- font-family: 'Arial Pixel';
- src: url('path-to-your-font/dish-arial-pixel.ttf') format('truetype');
- font-family: 'VCR OSD MONO';
- src: url('path-to-your-font/vcr-osd-mono.ttf') format('truetype');
-}
-
 .image-container {
- position: relative;
+ position: absolute;
  width: 300px;
  height: 300px;
 }
@@ -114,69 +66,10 @@ header {
  z-index: 2;
 }
 
-/* Position each image individually */
-.image-container img:nth-child(1) {
- z-index: 3;
-}
-
-.image-container img:nth-child(2) {
- top: 2000px;
- left: 20px;
- z-index: 2;
-}
-
-.image-container img:nth-child(3) {
- top: 70px;
- left: 40px;
- z-index: 3;
-}
-
-.image-container img:nth-child(4) {
- top: 0;
- left: 0;
- z-index: 4;
-}
-
-.image-container img:nth-child(5) {
- top: 20px;
- left: 20px;
- z-index: 5;
-}
-
-.image-container img:nth-child(6) {
- top: 40px;
- left: 40px;
- z-index: 6;
-}
-
 .image-wrapper:hover .image-text {
    display: block;
-   z-index: 1; /* Bring the text to the front */
 }
 
 .navbar {
-   position: fixed;
-   height: 60px;
-   width: 100%;
-   color: black; /* Customize the text color as needed */
-   padding: 1px; /* Customize the padding as needed */
-   text-align: center;
-   z-index: 1000; /* Ensure it's above other elements */
-   text-shadow:
-   0 0 5px #ffc305; /* Adds a stroke and shadow effect */
+   text-shadow: 0 0 5px #fce390;
 }
- 
- /* Style the links inside the navigation bar */
- .navbar a {
-   display: inline-block; /* Set to inline-block to make them appear horizontally */
-   color: #ffc305;
-   text-align: center;
-   padding: 5px;
-   font-size: 50px;
- }
- 
- /* Change the color of links on hover */
- .navbar a:hover {
-   background-color: none;
-   color: none;
- }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOGS OF NY: ENTRY 7</title>
+    <link href="../assets/main.css" rel="stylesheet">
+    <link href="../assets/entry-7.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body,
+    a,
+    a:hover {
+        cursor: url("images-e7/pink-cursor.png"), auto
+    }
+
+    a:hover,
+    .next-button,
+    img,
+    button {
+        cursor: url("images-e7/pointing-hand.png"), auto
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../entry-6/index.html" style="color: white">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a href="../entry-0/index.html" style="color: white">
+                <i class="fa fa-home"></i>
+            </a>
+            <a href="../entry-8/index.html" style="color: white">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        guess
+        <br>that
+        <br>breed!
+    </div>
+
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div class="question">
+
+                <div class="question">
+                    <p>Question 1: <font color="green">Easy</font><br>Select the Yorkshire Terrier</p>
+                    <label><input type="radio" name="q1" value="b"><img src="images-e7/maltese.png"></label>
+                    <label><input type="radio" name="q1" value="a"><img src="images-e7/yorkshire-terrier.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 2: <font color="green">Easy</font><br>Select the Greyhound</p>
+                    <label><input type="radio" name="q2" value="b"><img src="images-e7/doberman.png"></label>
+                    <label><input type="radio" name="q2" value="a"><img src="images-e7/greyhound.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 3: <font color="green">Easy</font><br>Select the English Bulldog</p>
+                    <label><input type="radio" name="q3" value="b"><img src="images-e7/pitbull.png"></label>
+                    <label><input type="radio" name="q3" value="a"><img src="images-e7/english-bulldog.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 4: <font color="orange">Intermediate</font><br>Select the Golden Retriever</p>
+                    <label><input type="radio" name="q4" value="b"><img src="images-e7/yellow-lab.png"></label>
+                    <label><input type="radio" name="q4" value="a"><img src="images-e7/golden-retriever.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 5: <font color="orange">Intermediate</font><br>Select the Boston Terrier</p>
+                    <label><input type="radio" name="q5" value="b"><img src="images-e7/french-bulldog.png"></label>
+                    <label><input type="radio" name="q5" value="a"><img src="images-e7/boston-terrier.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 6: <font color="orange">Intermediate</font><br>Select the Papillon</p>
+                    <label><input type="radio" name="q6" value="a"><img src="images-e7/papillon.png"></label>
+                    <label><input type="radio" name="q6" value="b"><img
+                            src="images-e7/long-haired-chihuahua.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 7: <font color="red">Hard</font><br>Select the Siberian Husky</p>
+                    <label><input type="radio" name="q7" value="a"><img src="images-e7/siberian-husky.png"></label>
+                    <label><input type="radio" name="q7" value="b"><img src="images-e7/alaskan-malamute.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 8: <font color="red">Hard</font><br>Select the German Shepherd</p>
+                    <label><input type="radio" name="q8" value="b"><img src="images-e7/belgian-malinois.webp"></label>
+                    <label><input type="radio" name="q8" value="a"><img src="images-e7/german-shepherd.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 9: <font color="red">Hard</font><br>Select the Shih-Tzu</p>
+                    <label><input type="radio" name="q9" value="a"><img src="images-e7/shih-tzu.png"></label>
+                    <label><input type="radio" name="q9" value="b"><img src="images-e7/lhasa-apso.png"></label>
+                </div>
+
+                <div class="question">
+                    <p>Question 10: <font color="red">Hard</font><br>Select the Beagle</p>
+                    <label><input type="radio" name="q10" value="a"><img src="images-e7/beagle.png"></label>
+                    <label><input type="radio" name="q10" value="b"><img src="images-e7/american-foxhound.png" </label>
+                </div>
+
+                <button type="button" onclick="calculateScore()">Submit</button>
+        </form>
+
+        <div id="result" style="display: none;">
+            <h2>Your Score</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            let score = 0;
+
+            for (let i = 1; i <= 10; i++) {
+                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selectedOption) {
+                    const userAnswer = selectedOption.value;
+                    if (userAnswer === 'a') {
+                        score++;
+                    }
+                }
+            }
+
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('score').innerText = `You scored ${score} out of 10.`;
+        }
+    </script>
+
+</body>
+
+</html>

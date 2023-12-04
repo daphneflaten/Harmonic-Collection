@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOGS OF NY: ENTRY 8</title>
+    <link href="../assets/main.css" rel="stylesheet">
+    <link href="../assets/entry-8.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body,
+    a,
+    a:hover {
+        cursor: url("images-e8/pink-cursor.png"), auto
+    }
+
+    a:hover,
+    .next-button,
+    .image-container {
+        cursor: url("images-e8/pointing-hand.png"), auto
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../entry-7/index.html" style="color: white">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a href="../entry-0/index.html" style="color: white">
+                <i class="fa fa-home"></i>
+            </a>
+            <a href="../entry-9/index.html" style="color: white">
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </header>
+
+    <div class="container3" style="margin-left: 8%; margin-top: 5%">
+        Best
+        <br>Dog -
+        <br>Friendly
+        <br>Parks
+        <br>in
+        <br>NYC
+    </div>
+
+    <div class="container" style="margin-left: 25%">
+        <img src="../entry-8/images-e8/map.png">
+    </div>
+
+    <div class="image-container" style="margin-left: 77%; margin-top: -2%">
+        <div class="container2">
+            Central Park
+        </div>
+        <img src="../entry-8/images-e8/central-park.jpeg">
+    </div>
+    <div class="image-container" style="margin-left: 79%; margin-top: 12%">
+        <div class="container2">
+            Domino Park
+        </div>
+        <img src="../entry-8/images-e8/domino-park.jpeg">
+    </div>
+    <div class="image-container" style="margin-left: 75%; margin-top: 30%">
+        <div class="container2">
+            Prospect Park
+        </div>
+        <img src="../entry-8/images-e8/prospect-park.jpeg">
+    </div>
+    <div class="image-container" style="margin-left: 58%; margin-top: 0%">
+        <div class="container2">
+            Madison Square Park
+        </div>
+        <img src="../entry-8/images-e8/madison-square-park.jpeg">
+    </div>
+    <div class="image-container" style="margin-left: 52%; margin-top: 20%">
+        <div class="container2">
+            Hillside Park
+        </div>
+        <img src="../entry-8/images-e8/hillside-park.jpeg">
+    </div>
+
+    <script>
+        const imageContainer = document.querySelector('.image-container');
+
+        imageContainer.addEventListener('mouseover', () => {
+            // Change the background image on hover
+            imageContainer.style.backgroundImage = 'url("domino-park.jpeg")';
+        });
+
+        imageContainer.addEventListener('mouseout', () => {
+            // Restore the background image when the mouse leaves
+            imageContainer.style.backgroundImage = 'url("domino-park.jpeg")';
+        });
+    </script>
+
+</body>
+
+</html>

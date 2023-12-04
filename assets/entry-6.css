@@ -1,0 +1,40 @@
+body {
+   background-image: url('bg-redgradient.jpeg');
+}
+
+.container {
+   position: absolute;
+   padding: 0px;
+   color: #000;
+   text-align: center;
+   font-family: 'digistick', sans-serif;
+   font-size: 80px;
+   text-shadow: 0 0 5px black;
+   line-height: 65px;
+   width: 100%;
+}
+
+.container2 {
+   position: absolute;
+   padding: 0px;
+   color: #000;
+   z-index: 100;
+   text-align: center;
+   font-family: 'vcr osd mono', sans-serif;
+   font-size: 18px;
+   text-shadow: 0 0 5px black;
+   line-height: 20px;
+   width: 65ch;
+}
+
+.navbar {
+   text-shadow: 0 0 5px #000;
+}
+
+image {
+   width: 100%;
+}
+
+.image-container {
+   position: absolute;
+}

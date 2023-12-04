@@ -1,160 +1,99 @@
 body {
-   background-repeat: repeat-y;
-   background-size: 100%;
-   background-color: #FFF;
-   justify-content: center;
-   min-height: 100vh;
-   max-width: 100%;
    background-image: url('bg-bluegradient.png');
 }
 
-.move-image {
-   position: absolute; /* This allows you to use top, left, right, and bottom properties */
-   box-sizing: border-box;
-}
-
-#text {
-   display: none;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 1;
-}
-
-.image-text {
-   background-color: white;
-   width: 70px;
-   border: 4px ridge #ACAC9F;
-   padding: 0px;
-   color: #000;
-   z-index: 100;
-   text-align: center;
-   display: none;
-   position: absolute;
-}
-
 .image-container {
-   position: relative;
-   height: 0px;
-   width: 0px;
+   position: absolute;
+   display: flex;
+   z-index: 2;
+   color: #FFF;
+   text-shadow: 0 0 5px white;
+   font-family: 'vcr osd mono', monospace;
+}
+
+img.hoverable-image:hover {
+   transform: scale(1.1);
+   transition: transform 0.3s;
+}
+
+img {
+   max-width: none;
+   position: absolute;
+}
+
+.p {
+   text-align: center;
+   margin-top: 200%;
+   margin-left: 80%
 }
 
 .container {
-   position: relative;
-   padding: 0px;
+   position: absolute;
    color: #FFF;
    z-index: 100;
-   text-align: center;
    font-family: 'yagiza', sans-serif;
    font-size: 60px;
    text-shadow: 0 0 5px white;
 }
 
-a {
-   cursor: pointer; /* Set the default cursor for links to the pointing hand */
-}
-
-a:hover {
-   cursor: url("images-e0/pointing-hand.png"), pointer; /* Change cursor on link hover */
-}
-
-figcaption {
-   background-color: white;
-   width: 70px;
-   border: 4px ridge #ACAC9F;
-   padding: 0px;
-   color: #000;
-   z-index: 100;
-   text-align: center;
-}
-
-.hidden {
-   display: none;
-  }
-  
-@font-face {
-   font-family: 'Windows Command Prompt';
-   src: url('path-to-your-font/windows_command_prompt.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'Arial Pixel';
-   src: url('path-to-your-font/dish-arial-pixel.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'VCR OSD MONO';
-   src: url('path-to-your-font/vcr-osd-mono.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'birchleaf';
-   src: url('path-to-your-font/BirchLeaf.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'cooper bits';
-   src: url('path-to-your-font/CooperBits.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'digital disco';
-   src: url('path-to-your-font/DigitalDisco.ttf') format('truetype');
-}
-
-@font-face {
-   font-family: 'alkhemikal';
-   src: url('path-to-your-font/Alkhemikal.ttf') format('truetype');
-}
-@font-face {
-   font-family: 'rocketpop';
-   src: url('path-to-your-font/rocketpopbevel.otf') format('opentype');
-}
-@font-face {
-   font-family: 'y2k analog';
-   src: url('path-to-your-font/Y2K_analog_legacy_italic.ttf') format('truetype');
-}
-@font-face {
-   font-family: 'yerk';
-   src: url('path-to-your-font/Yerk-Regular.ttf') format('truetype');
-}
-@font-face {
-   font-family: 'kilo';
-   src: url('path-to-your-font/Kilo.otf') format('opentype');
-}
-@font-face {
-   font-family: 'yagiza';
-   src: url('path-to-your-font/YAGIZA__.TTF') format('truetype');
-}
-
-
 .text-container {
-   position: relative;
-   z-index: 2; /* Set a higher z-index to make it appear above other elements */
-   width: fit-content;
+   position: absolute;
+   z-index: 2;
    color: #FFF;
    z-index: 100;
-   height: fit-content;
-   text-shadow: 0 0 5px white; /* Adds a stroke and shadow effect */
+   text-shadow: 0 0 5px white;
+   font-family: 'vcr osd mono', monospace;
 }
 
-.image-with-shadow {
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the image */
+.rocking-image {
+   animation: rock 3s ease-in-out infinite;
 }
 
-.custom-text {
-   font-family: 'BirchLeaf', sans-serif;
+@keyframes rock {
+   0% {
+       transform: rotate(0deg);
+   }
+   50% {
+       transform: rotate(10deg);
+   }
+   100% {
+       transform: rotate(0deg);
+   }
 }
 
-.table-container {
-   max-height: 500px; /* Set the maximum height for scrolling */
-   overflow-y: auto; /* Enable vertical scrolling */
+.side-tab {
+   position: fixed;
+   top: 7%;
+   right: 0px;
+   width: 150px;
+   background-color: #ACAC9F;
+   color: #FFF;
+   text-align: left;
+   padding: 2px;
+   transition: left 0.3s ease-in-out;
+   box-shadow: 0 0 5px #ACAC9F;
+   text-shadow: 0 0 5px white;
+   font-family: 'vcr osd mono', monospace;
+   font-size: 12px;
+   z-index: 2000;
+}
+
+.tab-handle {
    display: flex;
-   text-align: center;
+   align-items: center;
+   justify-content: center;
+   height: 30px;
+   background-color: #FFF;
+   font-size: 16px;
+   color: #ACAC9F;
+   text-shadow: 0 0 5px #ACAC9F;
+
 }
 
-.table {
-   border-collapse: collapse;
-   /* Optional styling for the table */
+.tab-content {
+   display: none;
+}
+
+.side-tab:hover {
+   right: 0;
 }

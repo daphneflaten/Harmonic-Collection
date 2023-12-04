@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOGS OF NY: ENTRY 10</title>
+    <link href="../assets/main.css" rel="stylesheet">
+    <link href="../assets/entry-10.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body,
+    a,
+    a:hover {
+        cursor: url("images-e10/pink-cursor.png"), auto
+    }
+
+    a:hover,
+    .next-button,
+    .button-link,
+    .button {
+        cursor: url("images-e10/pointing-hand.png"), auto
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../entry-9/index.html" style="color: white">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a href="../entry-0/index.html" style="color: white">
+                <i class="fa fa-home"></i>
+            </a>
+        </div>
+    </header>
+
+    <img src="images-e10/pink-collar.png" alt="Image 1" class="draggable" id="image1" style="z-index: 1">
+    <img src="images-e10/flannel-bow.png" alt="Image 2" class="draggable" id="image2" style="z-index: 1">
+    <img src="images-e10/i-still-live-with-mom-shirt.png" alt="Image 3" class="draggable" id="image3">
+    <img src="images-e10/plaid-bandana.png" alt="Image 4" class="draggable" id="image4" style="z-index: 1">
+    <img src="images-e10/teddy-pjs.png" alt="Image 5" class="draggable" id="image5">
+    <img src="images-e10/shirt-and-tie.png" alt="Image 6" class="draggable" id="image6">
+    <img src="images-e10/spikey-collar.png" alt="Image 7" class="draggable" id="image7" style="z-index: 1">
+    <img src="images-e10/blue-shirt.png" alt="Image 8" class="draggable" id="image8">
+
+    <div id="imageContainer" style="margin-left: 70vw; margin-top: 10vh">
+        <img src="images-e10/name-tag.png" alt="Your Image">
+        <input type="text" id="textInput" placeholder="Pet's name...">
+    </div>
+
+    <div class="image-container">
+        <img src="images-e10/shih-tzu.png">
+    </div>
+
+    <div id="popup-container">
+        <div id="popup-content">
+            <p>On your way home from class, a stray dog followed you home. You decided to adopt them as your own! Now
+                let's accessorize your new friend.</p>
+            <div class="button-link">
+                <button onclick="closePopup()">X</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="entry-10.js"></script>
+
+</body>
+
+</html>
